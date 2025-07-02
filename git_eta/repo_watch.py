@@ -80,7 +80,7 @@ async def check_all(bot, repo_data, response_channel=None):
                             await response_channel.send(notif)
                     else:
                         if response_channel:
-                            await response_channel.send(f"✅ Aucun nouveau commit pour `{name}`.", flush=True)
+                            await response_channel.send(f"✅ Aucun nouveau commit pour `{name}`.")
 
             except Exception as e:
                 error_msg = f"⚠️ Erreur pour `{name}` : {e}"

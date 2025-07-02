@@ -54,7 +54,8 @@ async def handle_git_eta(client, message: discord.Message):
             return
         msg = "**📋 Dépôts suivis :**\n"
         for name, info in repos.items():
-            msg += f"• `{name}` → {info['url']} (Salon <#{info['channel_id']}>)\n"
+            msg += f"• `{name}` → <{info['url']}> (Salon <#{info['channel_id']}>)\n"
+
         await message.channel.send(msg)
 
     elif cmd == "rm" and len(args) == 3:
