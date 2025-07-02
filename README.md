@@ -1,2 +1,2 @@
 # lapalmebot
-Lapalme d'or des bots discord !
+Lapalme d'or des bots discord ! gingshit
