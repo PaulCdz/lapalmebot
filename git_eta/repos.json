@@ -1,1 +1,17 @@
-{}
+{
+  "test": {
+    "url": "test",
+    "channel_id": "1389960784653848596",
+    "last_sha": null
+  },
+  "element-desktop": {
+    "url": "https://github.com/element-hq/element-desktop/tree/develop",
+    "channel_id": "1389960784653848596",
+    "last_sha": "48a138102bfde789cf1717aa9691aa2cf79b02bb"
+  },
+  "lapalme": {
+    "url": "https://github.com/PaulCdz/lapalmebot",
+    "channel_id": "1389960784653848596",
+    "last_sha": "8cd92348393beed9b0b937c5c57898ae15fdbad9"
+  }
+}
