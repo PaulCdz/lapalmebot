@@ -7,5 +7,17 @@ services:
     env_file: .env
     restart: always
     volumes:
-      - .:/app  # optionnel : modifie le code sans rebuild
+      - .:/app  # utile en dev, à éviter en prod
     command: python bot.py
+    networks:
+      - bot-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://discord.com/api/v10/gateway"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+networks:
+  bot-net:
+    driver: bridge

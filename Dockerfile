@@ -7,4 +7,6 @@ COPY . .
 RUN pip install --upgrade pip \
  && pip install --default-timeout=100 -r requirements.txt
 
-CMD ["python", "bot.py"]
+ENV PYTHONUNBUFFERED=1
+
+CMD ["python", "-u", "bot.py"]
