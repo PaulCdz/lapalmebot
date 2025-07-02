@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  botdiscord:
+    build: .
+    container_name: lapalmebot-discord
+    env_file: .env
+    restart: always
+    volumes:
+      - .:/app  # optionnel : modifie le code sans rebuild
+    command: python bot.py
